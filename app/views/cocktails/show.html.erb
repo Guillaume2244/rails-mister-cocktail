@@ -1,0 +1,13 @@
+<h3> <%= @cocktail.name %> </h3>
+
+<%= link_to "Revenir a la homepage",cocktails_path%>
+
+
+<hr>
+
+
+<% @cocktail.ingredients.each do |ingredient| %>
+
+<%= ingredient.name %>
+
+<% end %>
