@@ -1,7 +1,6 @@
 class DosesController < ApplicationController
 
-    before_action :find_cocktail
-
+    before_action :find_cocktail, only: [:new, :create, :destroy]
    def new
     @dose = Dose.new
     @ingredients = Ingredient.all
@@ -15,6 +14,10 @@ class DosesController < ApplicationController
       render :new
     end
   end
+
+  def destroy
+  end
+
 
   private
 

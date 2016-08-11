@@ -6,15 +6,14 @@
 <hr>
 
 
-<% link_to "add a dose on this ingredient" %>
+      <% @cocktail.doses.each do |dose| %>
+      <%= dose.description %>
+      <%= Ingredient.find(dose.ingredient_id).name %>
+      <br>
+      <% end %>
 
-<% @cocktail.ingredients.each do |ingredient| %>
 
-<%= ingredient.name %>
-
-<% end %>
 
 <br>
 <br>
-
 <%= link_to "add a dose", new_cocktail_dose_path(@cocktail) %>
