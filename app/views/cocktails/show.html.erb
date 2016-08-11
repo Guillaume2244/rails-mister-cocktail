@@ -8,7 +8,9 @@
 
       <% @cocktail.doses.each do |dose| %>
       <%= dose.description %>
-      <%= Ingredient.find(dose.ingredient_id).name %>
+      <%= dose.ingredient.name %>
+      <%= link_to "remove", cocktail_dose_path(@cocktail, dose), method: :destr %>
+
       <br>
       <% end %>
 
