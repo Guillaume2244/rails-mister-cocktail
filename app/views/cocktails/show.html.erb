@@ -19,4 +19,24 @@
   <br>
   <br>
   <%= link_to "add a dose", new_cocktail_dose_path(@cocktail), class: "btn btn-success" %>
+
+
+
+  <%= link_to "add a review", new_cocktail_review_path(@cocktail), class: "btn btn-success" %>
+
+<% count = 0 %>
+ <% @cocktail.reviews.each do |review| %>
+ <% count += 1 %>
+ <% review.description %>
+ <% review.created_at %>
+ <% end %>
+
+<h2> Reviews : <%= count  %> </h2>
+
+<ul>
+ <% @cocktail.reviews.each do |review| %>
+ <li><%= review.description %> -->
+ <%= review.created_at %></li>
+ <% end %>
+</ul>
 </div>

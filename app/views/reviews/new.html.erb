@@ -1,0 +1,8 @@
+<h1>Ajoutez un commentaire pour<%= @cocktail.name %> </h1>
+
+<%= form_for [@cocktail, @review] do |f| %>
+  <%= f.text_field :description %>
+  <%= f.submit "add a comment" %>
+<% end %>
+
+
