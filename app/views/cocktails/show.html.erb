@@ -4,18 +4,17 @@
 
 
 <hr>
-
-
+      <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
       <% @cocktail.doses.each do |dose| %>
       <%= dose.description %>
       <%= dose.ingredient.name %>
-      <%= link_to "remove", cocktail_dose_path(@cocktail, dose), method: :delete %>
+
+      <%= link_to "remove", cocktail_dose_path(@cocktail, dose), method: :delete,  class: "btn btn-success"%>
+
 
       <br>
       <% end %>
 
-
-
 <br>
 <br>
-<%= link_to "add a dose", new_cocktail_dose_path(@cocktail) %>
+<%= link_to "add a dose", new_cocktail_dose_path(@cocktail), class: "btn btn-success" %>
