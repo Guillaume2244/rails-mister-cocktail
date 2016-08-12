@@ -1,9 +1,12 @@
-<div class="col-xs-12">
+<div class="col-xs-12 col-md-3">
+</div>
+<div class="col-xs-12 col-md-3">
   <div class="card1">
 
     <%= simple_form_for (@cocktail) do |f| %>
     <div class="card-description text-center padded">
     <%= f.text_field :name, placeholder: "Cocktail's name" %>
+    <%= f.input :country, collection: ["France", "Belgium", "Germany", "US"] %>
     </div>
     <div class="card-d">
     <%= f.input :photo %>

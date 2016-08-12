@@ -23,16 +23,11 @@
 .card1 {
   height: 300px;
   width: 500px;
-  color: green;
-  position: relative;
-  background-color: red;
+  color: black;
+  background-color: #FFFAEF;
 }
 
-.card-d {
-  position: absolute;
-  bottom: 50px;
-  right: 10%;
-}
+
 
 .card1-button {
   position: absolute;
@@ -49,8 +44,5 @@
   padding-bottom: 10px;
 }
 
-.cocktail_name_homepage {
-  padding-bottom: 10px;
-  border-bottom: solid 2px #32B796;
-}
+
 
