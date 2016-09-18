@@ -22,9 +22,9 @@
 
 .card1 {
   height: 300px;
-  width: 500px;
   color: black;
   background-color: #FFFAEF;
+  position: relative;
 }
 
 
@@ -44,5 +44,10 @@
   padding-bottom: 10px;
 }
 
+.card-d {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
 
 

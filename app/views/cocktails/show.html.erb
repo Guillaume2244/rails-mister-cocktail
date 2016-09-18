@@ -32,6 +32,9 @@
  <% end %>
 
 <h2> Reviews : <%= count  %> </h2>
+      <% if count == 0 %>
+      <p><%= 'Be the first one to add a review :)' %></p>
+      <%end %>
 
 <ul>
  <% @cocktail.reviews.each do |review| %>
