@@ -34,6 +34,9 @@ gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'autoprefixer-rails'
 
+gem 'mail_form'
+
+
 
 gem 'simple_form'
 # Use Capistrano for deployment
